@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+   
+}
+header{
+    padding-top: 30px;
+    background-color:darkorange; 
+   
+    height: 500px;
+}
+.superior{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+ul,li{
+    list-style-type: none;
+}
+.superior>h1{
+    color: blue;
+}
+nav,a{
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.carro1{
+    background-color:midnightblue ;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    
+ 
+    
+}
+.carro1,h2,p{
+     margin-top: 20px;
+}
+#car{
+    background: url(imagens/car-header.png) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    margin: auto;
+}
+/*main*/
+main{
+    padding-top: 120px;
+    display: flex;
+    flex-flow:  wrap;
+    margin: 0 auto;
+    width: 70%;
+}
+
+section{
+    text-align: center;
+    margin-top: 150px;
+}
+main>div{
+    margin-bottom: 30px;
+    background-color: rgba(128, 128, 128, 0.568);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    width: 400px;
+
+}
+.vermelho{
+    background: url(imagens/car-card.png) no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    margin: 0 auto;
+}
+main>div,h2,p{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.euquero{
+    width: 400px;
+    padding: 7px;
+    background-color: rgba(25, 25, 112, 0.948);
+    color: white;
+}
+
+.euquero:hover{
+    background-color: white;
+    color: black;
+}
+/*footer*/
+footer{
+    text-align: center;
+    color: white;
+    background-color:rgba(25, 25, 112, 0.948) ;
+}
+
+@media screen and (min-width:800px){
+    .carro1{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row-reverse;
+        align-items: center;
+    }
+
+    #car{
+        width: 400px;
+    }
+    main>div{
+        
+        margin-bottom: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 300px;
+    }
+  
+    main{
+        margin-bottom: 50px;
+        margin: auto;
+        width: 70%;
+        justify-content: space-around;
+    }
+}
